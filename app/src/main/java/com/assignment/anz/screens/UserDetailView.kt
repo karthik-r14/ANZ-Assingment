@@ -1,4 +1,4 @@
-package com.assignment.anz.ui_screens
+package com.assignment.anz.screens
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun UserDetailScreen(
+fun UserDetailView(
     name: String, email: String, username: String, onBack: () -> Unit
 ) {
     Column(

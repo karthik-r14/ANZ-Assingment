@@ -1,4 +1,4 @@
-package com.assignment.anz.ui_screens
+package com.assignment.anz.screens
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity

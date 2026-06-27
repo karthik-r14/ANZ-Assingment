@@ -1,4 +1,4 @@
-package com.assignment.anz.ui_screens
+package com.assignment.anz.screens
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
@@ -36,7 +36,7 @@ import com.assignment.anz.viewmodel.UserViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun UserListComposeView(
+fun UserListView(
     viewModel: UserViewModel, onUserClick: (User) -> Unit
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
