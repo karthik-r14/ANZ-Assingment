@@ -36,9 +36,7 @@ fun AppNavigation() {
 
             user?.let {
                 UserDetailView(
-                    name = user.name,
-                    username = user.username,
-                    email = user.email,
+                    user = user,
                     onBack = { navController.popBackStack() })
             }
         }

@@ -26,6 +26,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
@@ -93,17 +94,13 @@ fun UserCard(user: User, modifier: Modifier) {
     ) {
 
         Row {
-            AsyncImage(
-                model = user.photo,
-                contentDescription = "User profile picture",
+            RenderPhoto(
+                imageUrl = user.photo,
                 modifier = Modifier
                     .size(80.dp)
                     .clip(CircleShape),
-                contentScale = ContentScale.Crop,
-                placeholder = painterResource(R.drawable.circular_progress_bar),
-                error = painterResource(R.drawable.ic_error)
+                contentDescription = stringResource(R.string.user_profile_picture)
             )
-
 
             Column(modifier = Modifier.padding(16.dp)) {
                 Text(
@@ -115,6 +112,18 @@ fun UserCard(user: User, modifier: Modifier) {
             }
         }
     }
+}
+
+@Composable
+fun RenderPhoto(imageUrl: String, modifier: Modifier, contentDescription: String? = null) {
+    AsyncImage(
+        model = imageUrl,
+        contentDescription = contentDescription,
+        modifier = modifier,
+        contentScale = ContentScale.Crop,
+        placeholder = painterResource(R.drawable.circular_progress_bar),
+        error = painterResource(R.drawable.ic_error)
+    )
 }
 
 @Composable
