@@ -6,7 +6,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.assignment.anz.ui_screens.UserDetailScreen
-import com.assignment.anz.ui_screens.UserListScreen
+import com.assignment.anz.ui_screens.UserListComposeView
 import com.assignment.anz.viewmodel.UserViewModel
 
 import kotlinx.serialization.Serializable
@@ -24,7 +24,7 @@ fun AppNavigation() {
 
     NavHost(navController = navController, startDestination = UserListRoute) {
         composable<UserListRoute> {
-            UserListScreen(
+            UserListComposeView(
                 viewModel = viewModel, onUserClick = { user ->
                     viewModel.selectUser(user)
                     navController.navigate(UserDetailRoute)
