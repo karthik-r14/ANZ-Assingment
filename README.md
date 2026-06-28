@@ -36,7 +36,7 @@ This is an android application that demonstrates best practices in Android devel
 
 ## Project Structure
 
-- `com.assignment.anz.ui`: Compose-based UI components and screens.
+- `com.assignment.anz.screens`: Compose-based UI components and screens.
 - `com.assignment.anz.viewmodel`: ViewModel logic and UI state definitions.
 - `com.assignment.anz.repository`: Repository implementations.
 - `com.assignment.anz.network`: Retrofit API definitions.
