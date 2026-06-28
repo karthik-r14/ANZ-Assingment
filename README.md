@@ -1,12 +1,12 @@
-# ANZ User Directory Assignment
+# ANZ Assignment
 
 An Android application that demonstrates best practices in Android development, including Jetpack Compose, Hilt Dependency Injection, and MVVM architecture. The app fetches a list of users from a remote API and displays their details.
 
 ## Screenshots
 
 <p align="center">
-  <img src="app/src/main/res/drawable/app_screenshot_one.png" width="30%" />
-  <img src="app/src/main/res/drawable/app_screenshot_two.png" width="30%" />
+  <img src="app/src/main/res/drawable/app_screenshot_one.png" height="450" />
+  <img src="app/src/main/res/drawable/app_screenshot_two.png" height="450" />
 </p>
 
 ## Features
