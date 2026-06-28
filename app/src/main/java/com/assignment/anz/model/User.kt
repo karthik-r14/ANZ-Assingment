@@ -11,5 +11,6 @@ data class User(
     val photo: String? = null,
     val address: String? = null,
     val state: String? = null,
-    val country: String? = null
+    val country: String? = null,
+    val phone: String? = null
 )

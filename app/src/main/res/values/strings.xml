@@ -8,5 +8,7 @@
     <string name="address">Address: %1$s</string>
     <string name="state">State: %1$s</string>
     <string name="country">Country: %1$s</string>
+    <string name="phone">Phone: %1$s</string>"
     <string name="back_to_list">Back to List</string>
+    <string name="detail_screen">Detail Screen</string>
 </resources>

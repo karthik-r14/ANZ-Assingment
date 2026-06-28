@@ -31,7 +31,7 @@ fun UserDetailView(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text(text = "Detail Screen", style = MaterialTheme.typography.headlineMedium)
+        Text(text = stringResource(R.string.detail_screen), style = MaterialTheme.typography.headlineMedium)
 
         RenderPhoto(
             imageUrl = user.photo,

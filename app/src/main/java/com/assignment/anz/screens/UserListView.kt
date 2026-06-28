@@ -152,6 +152,10 @@ fun RenderUserInfo(user: User, textStyle: TextStyle) {
             country?.let { country ->
                 Text(text = stringResource(R.string.country, country), style = textStyle)
             }
+
+            phone?.let { phone ->
+                Text(text = stringResource(R.string.phone, phone), style = textStyle)
+            }
         }
     }
 }
