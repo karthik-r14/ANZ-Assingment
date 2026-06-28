@@ -6,7 +6,6 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.assignment.anz.model.User
-import com.assignment.anz.model.UserUiState
 import com.assignment.anz.repository.UserRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
@@ -16,6 +15,13 @@ import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
+
+
+sealed interface UserUiState {
+    object Loading : UserUiState
+    data class Success(val users: List<User>) : UserUiState
+    data class Error(val message: String) : UserUiState
+}
 
 @HiltViewModel
 class UserViewModel @Inject constructor(

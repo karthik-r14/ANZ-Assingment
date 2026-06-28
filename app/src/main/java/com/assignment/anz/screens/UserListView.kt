@@ -33,7 +33,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil3.compose.AsyncImage
 import com.assignment.anz.R
 import com.assignment.anz.model.User
-import com.assignment.anz.model.UserUiState
+import com.assignment.anz.viewmodel.UserUiState
 import com.assignment.anz.viewmodel.UserViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
